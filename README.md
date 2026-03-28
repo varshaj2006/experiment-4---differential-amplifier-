@@ -121,6 +121,66 @@ Current mirror load → maximum gain and improved output characteristics
 Thus, by changing the circuit configuration, the gain, bandwidth, and overall performance of the differential amplifier can be significantly affected.
 
 Circuit 1: Differential Amplifier with Resistive Load
+
+
+1.1 Working Principle
+
+The circuit consists of two matched NMOS transistors (M1 and M2) forming a differential pair, with their sources connected to a constant tail current source and their drains connected to resistive loads.
+
+When a differential input is applied:
+
+v
+i
+d
+=
+v
+i
+n
+1
+−
+v
+i
+n
+2
+
+the total tail current (
+I
+S
+S
+) is steered between the two transistors depending on the input difference.
+
+If 
+v
+i
+n
+1
+>
+v
+i
+n
+2
+, transistor M1 conducts more current while M2 conducts less.
+If 
+v
+i
+n
+2
+>
+v
+i
+n
+1
+, transistor M2 conducts more current while M1 conducts less.
+The change in drain current through each transistor produces a corresponding voltage drop across the load resistors (
+R
+D
+), resulting in differential output voltages at the drains.
+
+For small differential inputs, both transistors operate in the saturation region, and the amplifier behaves linearly, producing an amplified output proportional to the input difference.
+
+For larger differential inputs, one transistor may turn OFF while the other carries the entire current, resulting in non-linear operation.
+
+Thus, the circuit converts a differential input voltage into a differential output voltage using current steering through resistive loads.
 1.1 Working Principle
 The circuit consists of two matched NMOS transistors (M1 and M2) forming a differential pair, with their sources connected to a constant tail current source and their drains connected to resistive loads.
 
@@ -178,5 +238,3 @@ For small differential inputs, both transistors operate in the saturation region
 For larger differential inputs, one transistor may turn OFF while the other carries the entire current, resulting in non-linear operation.
 
 Thus, the circuit converts a differential input voltage into a differential output voltage using current steering through resistive loads.
-
-Circuit Diagram :-
