@@ -177,5 +177,4 @@ For larger differential inputs, one transistor may turn OFF while the other carr
 
 Thus, the circuit converts a differential input voltage into a differential output voltage using current steering through resistive loads.
 
-Circuit Diagram
-image
+Circuit Diagram 
